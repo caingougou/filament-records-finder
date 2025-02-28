@@ -8,6 +8,9 @@ function n() {
         lastCheckedRecord: null,
         livewireId: null,
         init: function () {
+            if (this.$root.closest("[x-selectedRecords]") !== null) {
+                this.selectedRecords = this.$root.closest("[x-selectedRecords]").attributes["x-selectedRecords"].value.split(",");
+            }
             this.livewireId = this.$root.closest("[wire\\:id]").attributes["wire:id"].value, this.$wire.$on("deselectAllTableRecords", () => this.deselectAllRecords()), this.$watch("selectedRecords", () => {
                 if (!this.shouldCheckUniqueSelection) {
                     this.shouldCheckUniqueSelection = !0;
