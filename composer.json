@@ -1,0 +1,33 @@
+{
+    "name": "caingougou/filament-records-finder",
+    "description": "This packages allows you to easily integrate a beautiful Record Finder into your Filament forms.",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0",
+        "filament/forms": "^3.0",
+        "filament/tables": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Caingougou\\FilamentRecordsFinder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "caingougou",
+            "email": "caingougou@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Caingougou\\FilamentRecordsFinder\\FilamentRecordsFinderServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "keywords": []
+}
