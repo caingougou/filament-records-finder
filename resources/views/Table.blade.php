@@ -118,7 +118,7 @@
     @else
         ax-load
     @endif
-    ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('table', 'Caingougou/filament-records-finder') }}"
+    ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('table', 'caingougou/filament-records-finder') }}"
     x-data="table"
     @class([
         'fi-ta',
