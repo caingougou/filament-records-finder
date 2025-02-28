@@ -54,6 +54,6 @@ class FilamentRecordsFinderServiceProvider extends PackageServiceProvider
     {
         FilamentAsset::register([
             AlpineComponent::make('table', __DIR__ . '/../dist/components/table.js'),
-        ], 'Caingougou/filament-records-finder');
+        ], 'caingougou/filament-records-finder');
     }
 }
