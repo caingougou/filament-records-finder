@@ -46,11 +46,11 @@ class RecordsModalContent extends Component implements HasForms, HasTable
         /** @var Resource $resourceName */
         $resourceName = $this->resource;
         $primryKey    = $this->getPrimaryKey();
-        if ($this->specailQuery) {
-            $query = $resourceName::getRecordSelectorQuery($this->specailQuery);
-        } else {
-            $query = $resourceName::getEloquentQuery();
-        }
+        // if ($this->specailQuery) {
+        //     $query = $resourceName::getRecordSelectorQuery($this->specailQuery);
+        // } else {
+        $query = $resourceName::getEloquentQuery();
+        // }
 
         $tableObject = $resourceName::table($table)
             ->selectable()
